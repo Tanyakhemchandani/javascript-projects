@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+.logo h3{
+    padding-top: 5px;
+    padding-left: 4px;
+    font-family: Poppins;
+}
+.logo{
+text-decoration: none;
+    text-align: justify;
+    display:flex;
+    justify-content: center;
+    
+}
+nav{
+    margin-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 12px;
+}
+
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 0 13px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: rgb(180, 191, 249);
+}
+main{
+    min-height: 85vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+.container
+{
+    align-items: center;
+    max-width: 70vw;
+    max-height: 100vw;
+    margin: auto;
+    padding: 9px 15px;
+    background-color: rgb(177, 236, 255);
+    text-align: center;
+}
+input{
+    border: 0px solid black;
+    padding: 5px;
+    border-radius:5px ;
+    width: 40%;
+    height: 30px;
+    font-family: Poppins;
+}
+input::placeholder{
+    font-family: Poppins;
+    padding-left: 3px ;
+    cursor: pointer;
+    font-size: 15px;
+}
+#resetBtn{
+    width:15%;
+    height: 30px;
+    background-color: rgb(48, 108, 249);
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+#resetBtn:hover{
+    background-color: rgb(92, 119, 255);
+}
+#submitBtn{
+    width:15%;
+    height: 30px;
+    background-color: rgb(6, 153, 6);
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+#submitBtn:hover{
+    background-color: rgb(6, 179, 6);
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:center;
+    padding: 12px;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 12px;
+    
+}
+
+@media only screen and(max-width: 600px)
+{
+    body{
+        background-color: lightblue;
+    }
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px;
+    }
+}
